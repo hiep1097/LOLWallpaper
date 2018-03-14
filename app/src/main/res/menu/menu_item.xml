@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/drawer_recent"
+            android:title="Recent Images"
+            android:icon="@drawable/ic_drawer_recent"
+            >
+        </item>
+        <item
+            android:id="@+id/drawer_category"
+            android:title="Champion Select"
+            android:icon="@drawable/ic_drawer_category"
+            >
+        </item>
+        <item
+            android:id="@+id/drawer_favorite"
+            android:title="Favorite"
+            android:icon="@drawable/ic_drawer_favorite"
+            >
+        </item>
+        <item
+            android:id="@+id/drawer_rate"
+            android:title="Rate app if you like!"
+            android:icon="@drawable/ic_drawer_rate"
+            >
+        </item>
+        <item
+            android:id="@+id/drawer_more"
+            android:title="More App!"
+            android:icon="@drawable/ic_drawer_more"
+            >
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,13 @@
+<android.support.v7.widget.Toolbar
+
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:theme="@style/ToolbarColoredBackArrow"
+    android:popupTheme="@style/AppTheme"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:itemTextColor="#000"
+    app:titleTextColor="#fff"
+    >
+</android.support.v7.widget.Toolbar>

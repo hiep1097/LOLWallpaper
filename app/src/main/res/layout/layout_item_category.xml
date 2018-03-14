@@ -1,0 +1,21 @@
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/image_category"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:text="Garen"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+</LinearLayout>

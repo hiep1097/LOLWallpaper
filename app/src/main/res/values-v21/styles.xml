@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="colorPrimary">#fff</item>
+        <item name="android:colorControlNormal">@android:color/white</item>
+        <item name="android:actionMenuTextColor">#000</item>
+    </style>
+
+</resources>
