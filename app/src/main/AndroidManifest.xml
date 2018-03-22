@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.hoang.lolwallpaper"
+    package="com.hktstudio.lolwallpaper"
     >
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -22,18 +22,18 @@
         <meta-data android:name="DATABASE" android:value="databases.db" />
         <meta-data android:name="VERSION" android:value="2" />
         <meta-data android:name="QUERY_LOG" android:value="true" />
-        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example.hoang.lolwallpaper.Entities" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.hktstudio.lolwallpaper.Entities" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.hoang.lolwallpaper.fileprovider"
+            android:authorities="com.hktstudio.lolwallpaper.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/filepaths" />
         </provider>
-        <activity android:name=".Activities.SplashActivity"
+        <activity android:name="com.hktstudio.lolwallpaper.Activities.SplashActivity"
             android:launchMode="singleTop"
             >
             <intent-filter>
@@ -43,28 +43,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activities.MainActivity"
+        <activity android:name="com.hktstudio.lolwallpaper.Activities.MainActivity"
             android:launchMode="singleTop"
             >
 
         </activity>
-        <activity android:name=".Activities.ImagesTuongActivity"
-            android:parentActivityName=".Activities.MainActivity"
+        <activity android:name="com.hktstudio.lolwallpaper.Activities.ImagesTuongActivity"
+            android:parentActivityName="com.hktstudio.lolwallpaper.Activities.MainActivity"
             android:launchMode="singleTop"
             ></activity>
-        <activity android:name=".Activities.SlideImageActivity"
-            android:parentActivityName=".Activities.ImagesTuongActivity"
+        <activity android:name="com.hktstudio.lolwallpaper.Activities.SlideImageActivity"
+            android:parentActivityName="com.hktstudio.lolwallpaper.Activities.ImagesTuongActivity"
             android:launchMode="singleTop"
             android:label="Gallery"
             ></activity>
-        <activity android:name=".Activities.ZoomImageActivity"
-            android:parentActivityName=".Activities.SlideImageActivity"
+        <activity android:name="com.hktstudio.lolwallpaper.Activities.ZoomImageActivity"
+            android:parentActivityName="com.hktstudio.lolwallpaper.Activities.SlideImageActivity"
             android:label="Zoom"
             android:launchMode="singleTop"
             >
         </activity>
-        <activity android:name=".Activities.CropImageActivity"
-            android:parentActivityName=".Activities.SlideImageActivity"
+        <activity android:name="com.hktstudio.lolwallpaper.Activities.CropImageActivity"
+            android:parentActivityName="com.hktstudio.lolwallpaper.Activities.SlideImageActivity"
             android:label="Set as Wallpaper"
             android:launchMode="singleTop"
             ></activity>
