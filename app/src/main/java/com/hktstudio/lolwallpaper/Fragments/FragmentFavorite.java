@@ -32,7 +32,7 @@ import java.util.List;
 
 public class FragmentFavorite extends Fragment implements ItemOnClick{
     RecyclerView rcv_favorite;
-    List<ItemRecent> list;
+    List<ItemRecent> list = new ArrayList<>();
     List<ImageFavoriteEntity> listFav;
     AdapterRecent adapterRecent;
     View view;

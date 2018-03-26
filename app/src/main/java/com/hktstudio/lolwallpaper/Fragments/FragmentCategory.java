@@ -141,11 +141,12 @@ public class FragmentCategory extends Fragment implements ItemOnClick{
                     String json = "";
                     try {
                         json = response.body().string();
-                        updateList(json);
-                        hideProgress();
                     } catch (IOException e) {
                         e.printStackTrace();
+                    } catch (NullPointerException e){
                     }
+                    updateList(json);
+                    hideProgress();
 
                 }
             });

@@ -51,7 +51,7 @@ public class ImagesTuongActivity extends AppCompatActivity implements ItemOnClic
     Toolbar toolbar;
     RecyclerView rcv_recent;
     AdapterRecent adapterRecent;
-    List<ItemRecent> list;
+    List<ItemRecent> list = new ArrayList<>();
     List<ImageTuongEntity> listRecent;
     String CID;
     ProgressBar progressBar;
@@ -207,11 +207,12 @@ public class ImagesTuongActivity extends AppCompatActivity implements ItemOnClic
                     String json = "";
                     try {
                         json = response.body().string();
-                        updateList(json);
-                        hideProgress();
                     } catch (IOException e) {
                         e.printStackTrace();
+                    } catch (NullPointerException e){
                     }
+                    updateList(json);
+                    hideProgress();
                 }
             });
             return null;

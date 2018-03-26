@@ -17,6 +17,7 @@ import com.hktstudio.lolwallpaper.Interfaces.ItemOnClick;
 import com.hktstudio.lolwallpaper.Models.ItemCategory;
 import com.hktstudio.lolwallpaper.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,7 +26,7 @@ import java.util.List;
 
 public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.RecyclerViewHolder>{
     Context context;
-    List<ItemCategory> list;
+    List<ItemCategory> list = new ArrayList<>();
     private LayoutInflater mInflater;
     private ItemOnClick itemOnClick;
 

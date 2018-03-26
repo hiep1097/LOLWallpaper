@@ -46,7 +46,7 @@ import okhttp3.Response;
 public class FragmentRecent extends Fragment implements ItemOnClick{
     RecyclerView rcv_recent;
     AdapterRecent adapterRecent;
-    List<ItemRecent> list;
+    List<ItemRecent> list = new ArrayList<>();
     List<ImageRecentEntity> listRecent;
     ProgressBar progressBar;
     int count[] = new int[10001];
@@ -144,11 +144,12 @@ public class FragmentRecent extends Fragment implements ItemOnClick{
                     String json = "";
                     try {
                         json = response.body().string();
-                        updateList(json);
-                        hideProgress();
                     } catch (IOException e) {
                         e.printStackTrace();
+                    } catch (NullPointerException e){
                     }
+                    updateList(json);
+                    hideProgress();
                 }
             });
 
